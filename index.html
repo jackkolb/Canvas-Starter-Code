@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ONR-ISR</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body id="body">
+        <canvas id="main-canvas" class="main-canvas"></canvas>
+
+        <script type="text/javascript" src="js/environment.js"></script>
+
+        <script>
+            // locate the canvas and pull its 2D context
+            let canvas = document.getElementById("main-canvas")
+            let context = canvas.getContext('2d')
+
+            // set the canvas size, this has to be on via script or the canvas will be blurry
+            var canvasLength = document.getElementById("body").offsetHeight * .80  // this var is used by other functions for scaling pixels
+            canvas.setAttribute("width", canvasLength)
+            canvas.setAttribute("height", canvasLength)
+            
+            // draw the environment
+            drawEnvironment(context)
+
+            // game loop
+            window.setInterval(() => {
+                // updating environment object positions and state will go here
+            }, 100)
+        </script>
+    </body>
+</html>
