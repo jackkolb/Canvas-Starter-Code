@@ -1,8 +1,3 @@
-# ONR-ISR
-CEC ONR-ISR Project
+This is baseline code for getting started making a simulator with JavaScript and Canvas.
 
-ISR Simulator.
-
-## Running the simulator
-
-Open `index.html` in a web browser.
+To run, open `index.html` in a web browser.
